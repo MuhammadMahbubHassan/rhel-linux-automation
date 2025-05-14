@@ -23,9 +23,7 @@ Day	Script	Description
 5	selinux_check.sh	Displays SELinux mode and detailed status
 
 🚀 How to Run a Script
-bash
-Copy
-Edit
+
 cd scripts/
 chmod +x script_name.sh
 ./script_name.sh
@@ -48,11 +46,10 @@ Add daily documentation inside docs/
 
 Use Git to version control:
 
-bash
-Copy
-Edit
+
 git add scripts/your_script.sh docs/DayX.md
 git commit -m "Add DayX script and doc"
 git push origin main
+
 📌 License
 Muhammad Mahbub Hassan – Use, modify, and share freely.
