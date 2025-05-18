@@ -1,55 +1,60 @@
-# rhel-linux-automation
+rhel-linux-automation
  Production-ready shell scripts and Linux admin automation for Red Hat-based systems
 
  A curated collection of shell scripts for Red Hat-based Linux systems to automate common sysadmin tasks.
 Designed to build deep hands-on expertise as part of a DevOps/SRE transition journey.
 
 ---
+# 🚀 RHEL Linux Automation – Learning & Scripting Journey
 
-## 📁 Folder Structure
+**Author:** Masum  
+**Track:** Infrastructure to SRE/DevOps Engineer Transition  
+**Platform:** CentOS/RHEL-based Systems  
+**Duration:** Week 1 – Linux Fundamentals & Internals (Admin Focus)
 
-```bash
-.
-├── scripts/        # All automation scripts
-├── docs/           # Markdown documentation for each day
-└── README.md       # This file
-📆 Daily Script Index
-Day	Script	Description
-1	disk_usage_check.sh	Monitor disk usage and alert if threshold exceeded
-2	user_audit.sh	Lists login-enabled users and their shell
-3	Git & workflow setup	GitHub → CentOS → Windows tested
-4	yum_update_report.sh	Reports available & security updates
-5	service_status_report.sh	Checks key services like sshd, firewalld
-5	selinux_check.sh	Displays SELinux mode and detailed status
+---
 
-🚀 How to Run a Script
+## 📁 Repository Structure
 
-cd scripts/
-chmod +x script_name.sh
-./script_name.sh
-Most scripts are read-only and safe to run.
-Some may require sudo for full output.
+```text
+rhel-linux-automation/
+├── scripts/              # All automation & monitoring scripts
+├── docs/                 # Daily progress documentation
+└── README.md             # This file
+📜 Scripts Summary
+Day	Script	Purpose
+Day 1	disk_usage_check.sh	Checks and alerts on disk usage
+Day 2	user_audit.sh	Lists user accounts and their details
+Day 3	yum_update_report.sh	Reports available package and security updates
+Day 4	cron_audit.sh	Audits all user/system crontabs
+Day 5	log_parser.sh	Parses logs for important events
+Day 6	health_check.sh	Monitors system resources and status
+Day 7	final_audit.sh	Full system audit: resource + security summary
 
-🛠 Requirements
-RHEL, CentOS, Rocky Linux (7/8/9)
+📂 All scripts are available in: scripts/
 
-bash, coreutils, yum or dnf
+🗓️ Daily Progress Logs
+Day	Topics Covered	Doc
+Day 1	Disk Usage & GitHub Setup	Day1.md
+Day 2	User Audit & Ownership	Day2.md
+Day 3	Yum & Security Updates	Day3.md
+Day 4	Cron Auditing	Day4.md
+Day 5	Log Parsing Techniques	Day5.md
+Day 6	Cron Jobs, Log Alerts, Health Check	Day6.md
+Day 7	Final Audit, Permissions	Day7.md
 
-Optional: yum-plugin-security for update script
+🔧 Tech & Tools Used
+OS: CentOS 7 / RHEL 8
 
-🤝 Contributions (Personal Use or Team)
-Fork or clone the repo
+Scripting: Bash, awk, cron, system tools
 
-Create or edit scripts inside scripts/
+Git: Git Bash on Windows to push scripts and docs
 
-Add daily documentation inside docs/
+Editor: VSCode, nano
 
-Use Git to version control:
+Log Management: Manual parsing and analysis
 
 
-git add scripts/your_script.sh docs/DayX.md
-git commit -m "Add DayX script and doc"
-git push origin main
 
 📌 License
 Muhammad Mahbub Hassan – Use, modify, and share freely.
